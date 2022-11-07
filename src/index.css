@@ -9,7 +9,6 @@ body{
 .header{
     display: flex;
     padding:5px;
-    height: 100px;
     align-items: baseline;
     align-items: center;
     justify-content:space-between;
@@ -30,7 +29,7 @@ body{
     align-content: stretch;
     /* align-items: baseline; */
 }
-  
+
 .flex-container > div {
     padding: 5px;
     width:200px;
@@ -43,17 +42,13 @@ body{
     padding: 5px;
 }
 
-.poster{
-    cursor: pointer;
-}
-
 .poster:hover{
     border: 1px solid #ffffff;
     opacity: 0.40;
 }
 
 .detalhe{
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     display: flex;
     flex-direction:column;
     object-fit: cover;
@@ -91,7 +86,7 @@ body{
     text-justify: auto;
  }
 
-.descricao_detalhe > h1{
+.descricao_detalhe > h1, .genero_detalhe{
     margin-left:25px;
 }
 
@@ -107,3 +102,41 @@ body{
     height: 100px;
     text-align: center;
 }
+
+.genero_detalhe > ul{
+    list-style: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.genero_detalhe > ul > li{
+    display:inline;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .poster_detalhe > img{
+        width:100px;
+     }
+}
+
+.poster, .imgposter_detalhe {
+    cursor: pointer;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.imgposter_detalhe{
+    cursor:auto;
+}
+

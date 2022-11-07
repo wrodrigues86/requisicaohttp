@@ -1,8 +1,10 @@
+import logo from "../../files/logo.jpg"
+
 
 export default function Headers(){
     return (
         <div className="header">
-            <div><img width="150" alt="logo" src="https://i0.wp.com/portalcontexto.com.br/wp-content/uploads/2021/03/netflix-logo.png?fit=2560%2C1440&ssl=1" /></div>
+            <div><img className="logo" onClick={()=> document.location.href = '/' } width="150" alt="logo" src={logo} /></div>
             <div>
                 Menu 1 - Menu 2 - Menu 3
             </div>

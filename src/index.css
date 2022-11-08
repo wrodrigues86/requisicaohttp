@@ -125,8 +125,7 @@ body{
      }
 
      .flex-container > div {
-        width:175px;
-        justify-content:center;
+        width:180px;
     }
 }
 

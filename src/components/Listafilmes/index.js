@@ -3,12 +3,10 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function Listafilmes() {
-    const [filmes, setFilmes] = useState([]);
+    const [ filmes, setFilmes] = useState([]);
     const { paginacorrente } = useParams();
-    const [vpaginacorrente, setPaginacorrente] = useState();
-    const [pagina, Setpagina] = useState(1);
-    const [paginaAtual, SetpaginaAtual] = useState(1);
-    const [totalPaginas, SettotalPaginas] = useState(0);
+    const [ vpaginacorrente, setPaginacorrente] = useState();
+    const [ totalPaginas, SettotalPaginas] = useState(0);
     const urlImagem = "https://image.tmdb.org/t/p/w500";
 
     const [preview, setPreview] = useState(0);
@@ -39,7 +37,7 @@ export default function Listafilmes() {
         };
 
         buscaFilmes();
-    }, [pagina, vpaginacorrente, paginacorrente, preview, next]);
+    }, [vpaginacorrente, paginacorrente, preview, next]);
 
 
     return (

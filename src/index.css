@@ -27,7 +27,7 @@ body{
     justify-content:space-between;
     justify-content: flex-start;
     align-content: stretch;
-    /* align-items: baseline; */
+    align-items: baseline;
 }
 
 .flex-container > div {
@@ -123,6 +123,10 @@ body{
     .poster_detalhe > img{
         width:100px;
      }
+
+     .flex-container > div {
+        width:175px;
+    }
 }
 
 .poster, .imgposter_detalhe {
@@ -140,3 +144,12 @@ body{
     cursor:auto;
 }
 
+.menu_navegacao{
+    width:100px;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: brown;
+    text-align: center;
+    margin-left: 15px;
+}

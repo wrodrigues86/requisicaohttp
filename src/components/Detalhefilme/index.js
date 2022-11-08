@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Filme() {
 
@@ -36,7 +37,7 @@ export default function Filme() {
             </div>
             <div className="descricao_detalhe">
                 <div className="btn_voltar">
-                    <button onClick={() => { document.location.href = `/${paginacorrente}`; }}>voltar</button>
+                    <Link className="menu_navegacao" to={`/${paginacorrente}`}>volatr</Link>
                 </div>
                 <h1>{detlhe.title}</h1>
                 <div className="genero_detalhe">
